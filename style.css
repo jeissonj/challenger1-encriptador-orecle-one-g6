@@ -1,0 +1,96 @@
+
+
+
+header, footer{
+    background-color: #ADD8E6;
+    padding: 0% 0;
+}
+
+.caja-header, .caja-footer{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+} 
+
+.imagen-logo-alura-oracle{
+    transform: scale(0.4);
+}
+
+header h1{
+    display: inline;
+}
+
+nav{
+    position: absolute;
+    top:25%;
+    right: 0;    
+}
+
+nav samp{
+    display: inline;
+    margin: 0 0 0 15px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+
+
+.hastag{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+
+}
+span{
+    letter-spacing: 2px;
+    font-style: italic;
+    font-weight: 200;
+    cursor: default;
+}
+
+.texto-entrada {
+    display: inline-block;
+    width: 35%;
+    padding: 4% 10% 5% 4%;
+}
+
+.guardado-vacio{
+    display: inline-block;
+    width: 35%;
+    padding: 4% 10% 5% 5%;
+}
+
+
+
+.ultima-leyeda{
+    font-size: larges;
+    text-align: center;
+    display: inline;
+}
+
+.pie-pagina{
+    background-color: #ADD8E6;
+    padding: 0% 0;
+}
+
+.parrafo-footer{
+    display: inline-block; 
+    color: #030303; 
+    font-size: 20px; 
+    text-align: center; 
+    position: relative; 
+    padding: 5% 15% 5% 15%; 
+    font-family: cursive;
+}
+
+.social-icons{
+    display: inline-block; 
+    position: absolute; 
+    padding: 5% 10px 0px 10%;
+}

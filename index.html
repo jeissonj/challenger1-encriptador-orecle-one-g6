@@ -1,24 +1,70 @@
 <!DOCTYPE html>
 <html>
     <head>
+
         <meta charset="UTF-8">
+        <link rel="icon" href="imagenes/logo-letra.png"> 
         <title>Encriptador Texto</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <script src="encryptor.js" defer></script>
+        
+  
+       
     </head>
-    
-    
+
     <body>
 
-        <div class="primera-casilla">
-            <label for="casilla-texto">Ecriptar</label>
-            <textarea cols="70" rows="10" id="casilla-texto" class="input-padron"></textarea>
-        </div>
+        <header>
+            <div class="caja-header">
+                <h1>
+                    <img class="imagen-logo-alura-oracle" src="imagenes/logo-aluraoracle.png" alt="Logo de alura y oracle one">
+                </h1>
+                <nav>
+                    <span class="hastag">#ChallegeOneCodificagorG6</span>
+                </nav>
+                
+            </div>
+        </header>
 
-        <div class="segunda-casilla">
-            <label for="casilla-mostrar-texto">Mensajillo</label>
-            <textarea cols="80" rows="20" id="casilla-desencriptar" class="input-padrom">cosa a mostrar</textarea>
-        </div>
+        <main>
+            <div class="texto-entrada">
+                <input class="caja-texto" id="caja-texto" type="text" name="MensajeEcriptar" placeholder="Mensaje">
+                <div class="botones">
+                    <button class="boton-encriptar" id="boton-encriptar">Encriptar</button>
+                    <button class="boton-desencriptar" id="boton-desencriptar">Desencriptar</button>
+                </div>
+            </div>
+    
+            <div id="texto-salida" class="guardado-vacio">
+                <h2 class="mensaje-alerta" id="alert">No hay mensajillos ...</h2>
+                <div id="guardados-conteiner"></div>
+
+
+            </div>
+
+        </main>
+        
+        <footer class="pie-pagina"  >
+            <div class="caja-footer">
+                <p class="parrafo-footer">
+                    Hecho con "<span style="color: red">❤</span>" por Jeisson 
+                </p>
+                <div class="social-icons">
+                    <a href="https://github.com/jeissonj" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Logo de GitHub" style="width: 30px; height: 30px;">
+                    </a>
+                    <a href="https://www.linkedin.com/in/jeissonj/" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/128/3669/3669739.png" alt="Logo Linkedign" style="width: 30px;  height: 30px;">      
+                    </a>
+                    <a href="https://www.instagram.com/jeissonj__/" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/128/1384/1384015.png" style="width: 30px; height:30px;">
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+
     </body>
         
 </html>
