@@ -56,13 +56,15 @@ span{
 
 .texto-entrada {
     display: inline-block;
-    width: 35%;
+    width: 50%;
+    float: left;
     padding: 4% 10% 5% 4%;
 }
 
 .guardado-vacio{
+    float: right;
     display: inline-block;
-    width: 35%;
+    width: 20%;
     padding: 4% 10% 5% 5%;
 }
 
@@ -75,13 +77,14 @@ span{
 }
 
 .pie-pagina{
+    clear: both;
     background-color: #ADD8E6;
     padding: 0% 0;
 }
 
 .parrafo-footer{
     display: inline-block; 
-    color: #030303; 
+    color: white; 
     font-size: 20px; 
     text-align: center; 
     position: relative; 
@@ -92,5 +95,5 @@ span{
 .social-icons{
     display: inline-block; 
     position: absolute; 
-    padding: 5% 10px 0px 10%;
+    padding: 10px 10px 0px 10px;
 }
