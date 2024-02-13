@@ -1,17 +1,17 @@
-
-
-
 header, footer{
     background-color: #ADD8E6;
     padding: 0% 0;
+    display: flex;
+    justify-content: center;
 }
 
 .caja-header, .caja-footer{
     width: 940px;
     position: relative;
     margin: 0 auto;
+    display: inline-block;
 } 
-
+                
 .imagen-logo-alura-oracle{
     transform: scale(0.4);
 }
@@ -20,13 +20,13 @@ header h1{
     display: inline;
 }
 
-nav{
+.nav{
     position: absolute;
     top:25%;
     right: 0;    
 }
 
-nav samp{
+.nav samp{
     display: inline;
     margin: 0 0 0 15px;
     text-transform: uppercase;
@@ -54,12 +54,28 @@ span{
     cursor: default;
 }
 
+.cuerpo{
+    width: 100%;
+    background: linear-gradient(#ADD8E6, #ADD8E6);
+    display: flex;
+    justify-content: center;
+}
+.caja-cuerpo{
+    width: 70%;
+    display: block;
+}
+
 .texto-entrada {
     display: inline-block;
     width: 50%;
     float: left;
     padding: 4% 10% 5% 4%;
 }
+
+.texto-entrada .boton-encriptar , .boton-desencriptar{
+    width: 40%;
+}
+
 
 .guardado-vacio{
     float: right;
@@ -76,7 +92,7 @@ span{
     display: inline;
 }
 
-.pie-pagina{
+.pie-pagina{    
     clear: both;
     background-color: #ADD8E6;
     padding: 0% 0;
