@@ -72,7 +72,11 @@ span{
     padding: 4% 10% 5% 4%;
 }
 
-.texto-entrada .boton-encriptar , .boton-desencriptar{
+.texto-entrada{
+    width: 40%;
+}
+
+.boton-encriptar , .boton-desencriptar{
     width: 40%;
     padding: 0 2% 0 0;
     background: #23646f;
@@ -80,6 +84,7 @@ span{
     border-radius: 10%;
     height: 20px;
     color: white;
+    cursor: pointer;
 }
 
 .cajon-texto-encriptar{
