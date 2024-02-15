@@ -74,8 +74,17 @@ span{
 
 .texto-entrada .boton-encriptar , .boton-desencriptar{
     width: 40%;
+    padding: 0 2% 0 0;
+    background: #23646f;
+    border: none;
+    border-radius: 10%;
+    height: 20px;
+    color: white;
 }
 
+.cajon-texto-encriptar{
+    width: 90%;
+}
 
 .guardado-vacio{
     float: right;
