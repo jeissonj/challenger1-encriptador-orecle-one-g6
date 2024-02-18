@@ -42,7 +42,7 @@ span{
 
 .cuerpo{
     width: 100%;
-    background: linear-gradient(#ADD8E6, #ADD8E6);
+    background: linear-gradient(#adc9e6, #349289);
     display: flex;
     justify-content: center;
 }
@@ -63,10 +63,11 @@ span{
 }
 
 .botones{
-    display: inline;
+    display: flex;
+    justify-content: center;
 }
 
-.boton-encriptar , .boton-desencriptar{
+.boton-encriptar , .boton-desencriptar, .boton-copiar{
     width: 40%;
     height: 30px;
     padding: 0 2% 0 0;
@@ -75,11 +76,13 @@ span{
     border-radius: 10%;
     color: white;
     cursor: pointer;
+    margin: 0 5px 0 5px;
 }
 
-.cajon-texto-encriptar{
+.cajon-texto-encriptar, .mensaje-alerta, .bloque-texto{
     width: 90%;
     border-radius: 8%;
+    font-size: 20px;
 }
 
 .guardado-vacio{
@@ -89,6 +92,9 @@ span{
     padding: 4% 10% 5% 5%;
 }
 
+.imagen-lupa{
+    width: 20%;
+}
 
 
 .ultima-leyeda{
