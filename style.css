@@ -6,10 +6,13 @@ header, footer{
 }
 
 .caja-header, .caja-footer{
+    align-items: center;
+    justify-content: center;
     width: 940px;
+    display: flex;
     position: relative;
     margin: 0 auto;
-    display: inline-block;
+    /* display: inline-block; */
 } 
                 
 .imagen-logo-alura-oracle{
@@ -18,12 +21,6 @@ header, footer{
 
 header h1{
     display: inline;
-}
-
-.nav{
-    position: absolute;
-    top:25%;
-    right: 0;    
 }
 
 .nav samp{
@@ -36,17 +33,6 @@ header h1{
     text-decoration: none;
 }
 
-
-
-.hastag{
-    display: inline-block;
-    text-align: center;
-    width: 30%;
-    vertical-align: top;
-    margin: 0 1.5%;
-    padding: 30px 20px;
-
-}
 span{
     letter-spacing: 2px;
     font-style: italic;
@@ -76,19 +62,24 @@ span{
     width: 40%;
 }
 
+.botones{
+    display: inline;
+}
+
 .boton-encriptar , .boton-desencriptar{
     width: 40%;
+    height: 30px;
     padding: 0 2% 0 0;
     background: #23646f;
     border: none;
     border-radius: 10%;
-    height: 20px;
     color: white;
     cursor: pointer;
 }
 
 .cajon-texto-encriptar{
     width: 90%;
+    border-radius: 8%;
 }
 
 .guardado-vacio{
@@ -112,18 +103,18 @@ span{
     padding: 0% 0;
 }
 
-.parrafo-footer{
+.parrafo-footer, .parrafo-header {
     display: inline-block; 
     color: white; 
-    font-size: 20px; 
+    /* font-size: 20px;  */
     text-align: center; 
     position: relative; 
-    padding: 5% 15% 5% 15%; 
+    /* padding: 5% 15% 5% 15%;  */
     font-family: cursive;
 }
 
 .social-icons{
     display: inline-block; 
-    position: absolute; 
-    padding: 10px 10px 0px 10px;
+    /* position: absolute;  */
+    /* padding: 10px 10px 0px 10px; */
 }

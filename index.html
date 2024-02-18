@@ -7,7 +7,6 @@
         <title>Encriptador Texto</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
-        <script src="encryptor.js" defer></script>
         
   
        
@@ -20,8 +19,8 @@
                 <h1>
                     <img class="imagen-logo-alura-oracle" src="imagenes/logo-aluraoracle.png" alt="Logo de alura y oracle one">
                 </h1>
-                <p class="nav   ">
-                    <span class="hastag">#ChallegeOneCodificagorG6</span>
+                <p class="parrafo-header">
+                    #ChallegeOneCodificagorG6
                 </p>
                 
             </div>
@@ -35,8 +34,8 @@
     
                     
                     <div class="botones">
-                        <button class="boton-encriptar" id="boton-encriptar">Encriptar</button>
-                        <button class="boton-desencriptar" id="boton-desencriptar">Desencriptar</button>
+                        <button ondblclick="presionEncriptar();" class="boton-encriptar" id="boton-encriptar" onclick="enviarDatos()">Encriptar</button>
+                        <button class="boton-desencriptar" id="boton-desencriptar" onclick="enviarDatos()">Desencriptar</button>
                     </div>
                 </div>
         
@@ -69,6 +68,7 @@
             </div>
         </footer>
 
+        <script src="encryptor.js" defer></script>
 
     </body>
         
