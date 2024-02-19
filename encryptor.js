@@ -5,7 +5,6 @@
 
 function presionEncriptar(){
     let cambio = { "e":"enter", "i":"imes", "a":"ai", "o":"ober", "u":"ufat"};
-    alert('click')
     let mensajeOriginal = document.getElementById('comentario').value;
     console.log(mensajeOriginal)
     let mensajeModificado = mensajeOriginal.replace(/[eiaou]/g, letra => cambio[letra] ? cambio[letra] : letra);
@@ -28,6 +27,7 @@ function presionDesencriptar(){
 function presionCopiar(){
     let mensajeCopiar = document.getElementById('bloque-texto').value;
     console.log(mensajeCopiar)
+    alert('Mensaje copiado')
     navigator.clipboard.writeText(mensajeCopiar)
     .then(() => {
         console.log('Texto copiado al portapapeles correctamente.');

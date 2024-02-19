@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="imagenes/logo-letra.png"> 
         <title>Encriptador Texto</title>
         <link rel="stylesheet" href="reset.css">
+        <!-- <link rel="stylesheet" href="style-mobile.css" media="screen and (max-width: 500px)"> -->
         <link rel="stylesheet" href="style.css">
-        
-  
-       
     </head>
 
     <body>
-
-        <header id="id-header">
+        <header>
             <div class="caja-header">
-                <h1>
+                <h1 class="titulo-header">
                     <img class="imagen-logo-alura-oracle" src="imagenes/logo-aluraoracle.png" alt="Logo de alura y oracle one">
                 </h1>
                 <p class="parrafo-header">
                     #ChallegeOneCodificagorG6
                 </p>
-                
             </div>
         </header>
 
@@ -30,29 +26,24 @@
             <div class="caja-cuerpo">
                 <div class="texto-entrada">
                     <label for="area-texto"></label>
-                    <textarea class="cajon-texto-encriptar" name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese el texto a desecriptar aquí"></textarea>
-    
-                    
+                    <textarea class="cajon-texto-encriptar" name="comentario" id="comentario" placeholder="Ingrese el texto a desecriptar aquí"></textarea>
                     <div class="botones">
                         <button ondblclick="presionEncriptar();" class="boton-encriptar" id="boton-encriptar" >Encriptar</button>
-                        <button ondblclick="presionDesencriptar();" class="boton-desencriptar" id="boton-desencriptar" onclick="enviarDatos()">Desencriptar</button>
+                        <button ondblclick="presionDesencriptar();" class="boton-desencriptar" id="boton-desencriptar">Desencriptar</button>
                     </div>
                 </div>
         
                 <div id="texto-salida" class="guardado-vacio">
-                    <div id="bloque-texto-replace">
-                        
+                    <div id="bloque-texto-replace">                       
                         <img id="bloque-imagen" class="mensaje-alerta-ii" src="https://cdn-icons-png.flaticon.com/128/2920/2920349.png" alt="Imagen buscar">
-                        <textarea id="bloque-texto" class="mensaje-alerta-ii" placeholder="Ingresa el texto que quieras encriptar o desencriptar" placeholder="Ningun mensaje fue encontrado"></textarea>
+                        <textarea id="bloque-texto" class="mensaje-alerta-ii" placeholder="aca saldra quieras encriptar o desencriptar" placeholder="Ningun mensaje fue encontrado"></textarea>
                     </div>
                     <!-- <p class="mensaje-alerta>Ingresa el tecto que desees encriptar o desencriptar".</p> -->
                     <div class="botones">
                         <button ondblclick="presionCopiar();" class="boton-copiar" id="boton-copiar" >Copiar</button>
-                    </div>
-    
+                    </div>   
                 </div>
             </div>
-
         </main>
         
         <footer class="pie-pagina"  >
@@ -62,13 +53,13 @@
                 </p>
                 <div class="social-icons">
                     <a href="https://github.com/jeissonj" target="_blank">
-                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Logo de GitHub" style="width: 30px; height: 30px;">
+                        <img class="logo-red-social" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Logo de GitHub">
                     </a>
                     <a href="https://www.linkedin.com/in/jeissonj/" target="_blank">
-                        <img src="https://cdn-icons-png.flaticon.com/128/3669/3669739.png" alt="Logo Linkedign" style="width: 30px;  height: 30px;">      
+                        <img class="logo-red-social" src="https://cdn-icons-png.flaticon.com/128/3669/3669739.png" alt="Logo Linkedign">      
                     </a>
                     <a href="https://www.instagram.com/jeissonj__/" target="_blank">
-                        <img src="https://cdn-icons-png.flaticon.com/128/1384/1384015.png" style="width: 30px; height:30px;">
+                        <img class="logo-red-social" src="https://cdn-icons-png.flaticon.com/128/1384/1384015.png">
                     </a>
                 </div>
             </div>
@@ -76,6 +67,5 @@
 
         <script src="encryptor.js" defer></script>
 
-    </body>
-        
+    </body>     
 </html>

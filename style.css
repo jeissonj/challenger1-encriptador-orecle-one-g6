@@ -6,12 +6,10 @@ header, footer{
     
 }
 
-
-
 .caja-header, .caja-footer{
     align-items: center;
     justify-content: center;
-    width: 940px;
+    width: 100%;
     display: flex;
     position: relative;
     margin: 0 auto;
@@ -22,11 +20,11 @@ header, footer{
     transform: scale(0.4);
 }
 
-header h1{
+.titulo-header{
     display: inline;
 }
 
-.nav samp{
+/* .nav samp{
     display: inline;
     margin: 0 0 0 15px;
     text-transform: uppercase;
@@ -34,14 +32,7 @@ header h1{
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
-}
-
-span{
-    letter-spacing: 2px;
-    font-style: italic;
-    font-weight: 200;
-    cursor: default;
-}
+} */
 
 .cuerpo{
     width: 100%;
@@ -50,7 +41,7 @@ span{
     justify-content: center;
 }
 .caja-cuerpo{
-    padding: 80px;
+    padding: 40px;
     width: 70%;
     display: block;
 }
@@ -58,7 +49,6 @@ span{
 .texto-entrada {
     display: inline-block;
     width: 50%;
-    float: left;
     padding: 4% 10% 5% 4%;
 }
 
@@ -90,7 +80,7 @@ span{
 }
 
 .guardado-vacio{
-    float: right;
+    
     display: inline-block;
     width: 20%;
     padding: 4% 10% 5% 5%;
@@ -99,7 +89,6 @@ span{
 .imagen-lupa{
     width: 20%;
 }
-
 
 .ultima-leyeda{
     font-size: larges;
@@ -124,27 +113,87 @@ span{
     font-family: cursive;
 }
 
+span{
+    letter-spacing: 2px;
+    font-style: italic;
+    /* font-weight: 200px; */
+    cursor: default;
+}
+
 .social-icons{
     display: inline-block; 
     /* position: absolute;  */
     /* padding: 10px 10px 0px 10px; */
 }
+.logo-red-social{
+    width: 30px; 
+    height: 30px;
+}
 
 @media screen and (max-width:500px){
+
+    body{
+        width: fit-content;
+    }
     header{
-        height: 230px;
+        /* height: 230px; */
         width: auto;
     }
-    .caja-header{
+    .caja-header, .caja-footer{
+        display: block;
+        
+    }
+    .titulo-header{
         display: block;
     }
     .imagen-logo-alura-oracle{
         display: block;
-        transform: scale(1.5);
+        transform: scale(0.5);
         padding: 20px 20px 20px 20px;
     }
     .parrafo-header{
-        font-size: 50px;
-        display: block;     
+        display: block; 
+        padding: 0 0 10px 0;    
+        font-size: 30px;
+    }
+    .caja-cuerpo{
+        display: flex;
+        flex-direction: column;
+    }
+    .texto-entrada{
+        display: block;
+        width: 100%;
+    }
+    .cajon-texto-encriptar{
+        width: 100%;
+        height: 100px;
+    }
+    .botones{
+        padding-top: 5%;
+        /* font-size: 20px; */
+    }
+    .boton-copiar, .boton-encriptar, .boton-desencriptar{
+        font-size: 20px;
+    }
+    #texto-salida{
+        width: 100%;
+    }
+    #bloque-texto-replace{
+        width: 100%;
+    }
+    #bloque-texto{
+        width: 100%;
+        font-size: 20px;
+    }
+    #bloque-imagen{
+        display: block;
+        padding: 10% 30% 10% 30%;
+    }
+    .parrafo-footer{
+        padding: 5% 15% 5% 15%;
+        display: block;
+    }
+    .social-icons{
+        padding: 0 40% 10% 40%;
     }
 }
