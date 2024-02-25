@@ -10,7 +10,8 @@ function presionEncriptar(){
     let mensajeModificado = mensajeOriginal.replace(/[eiaou]/g, letra => cambio[letra] ? cambio[letra] : letra);
     let tituloCaja2 = document.getElementById("bloque-texto");
     tituloCaja2.innerHTML  = mensajeModificado
-    document.getElementById("bloque-imagen").src = "https://cdn-icons-png.flaticon.com/128/2572/2572665.png"
+    // document.getElementById("bloque-imagen").src = "https://cdn-icons-png.flaticon.com/128/2572/2572665.png"
+    document.getElementById("bloque-imagen").src = "https://cdn-icons-png.flaticon.com/128/763/763658.png"
     // document.querySelector("bloque-imagen").setAttribute("disable","true");
 }
 
@@ -20,7 +21,8 @@ function presionDesencriptar(){
     let mensajeModificado = mensajeOriginal.replace(/(enter|imes|ai|ober|ufat)/g, letra => cambio[letra] ? cambio[letra] : letra);
     let tituloCaja2 = document.getElementById("bloque-texto");
     tituloCaja2.innerHTML  = mensajeModificado
-    document.getElementById("bloque-imagen").src = "https://cdn-icons-png.flaticon.com/128/2912/2912783.png"
+    // document.getElementById("bloque-imagen").src = "https://cdn-icons-png.flaticon.com/128/2912/2912783.png"
+    document.getElementById("bloque-imagen").src = "https://cdn-icons-png.flaticon.com/128/763/763673.png"
 
 }
 
